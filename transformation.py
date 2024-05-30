@@ -1,11 +1,9 @@
 import requests
 import csv
 
-# print("To use this API, you need a Github access token. You can generate your token here: https://superheroapi.com/index.html") # "29fad3779249c79c0301f91124be1ba7"
-GITHUB_TOKEN = "29fad3779249c79c0301f91124be1ba7"  # input("Enter your Github token: ")
+print("To use this API, you need a Github access token. You can generate your token here: https://superheroapi.com/index.html")
+GITHUB_TOKEN = input("Enter your Github token: ")
 
-# todo - some simple test cases
-# todo - documentation: instructions for running, brief architectural overview, any assumptions/simplifications made
 
 def get_character_info(character_id: str, info_categories: list=None):
     print("retrieving character information")
